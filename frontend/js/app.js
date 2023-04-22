@@ -14,4 +14,5 @@ function validateForm() {
     alert("Message must be filled out");
     return false;
   }
+  return true;
 }
