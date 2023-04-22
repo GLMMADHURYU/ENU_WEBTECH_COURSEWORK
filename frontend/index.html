@@ -1,77 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Simple Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header>
+      <h1>My Website</h1>
       <nav>
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
-          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Services</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
       </nav>
     </header>
-
-    <section class="hero">
-      <div class="hero-text">
-        <h1>Welcome to my portfolio</h1>
-        <p>I'm a web developer and designer</p>
-        <a href="#" class="cta">View Portfolio</a>
-      </div>
-    </section>
-
-    <section class="about">
-      <h2>About me</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget
-        libero quis sapien faucibus hendrerit vitae quis nulla. Integer
-        consectetur enim non urna sodales, non sollicitudin ex hendrerit.
-      </p>
-    </section>
-
-    <section class="portfolio">
-      <h2>Portfolio</h2>
-      <ul>
-        <li>
-          <img src="https://via.placeholder.com/300x200.png?text=Project+1" alt="Project 1" />
-          <h3>Project 1</h3>
-        </li>
-        <li>
-          <img src="https://via.placeholder.com/300x200.png?text=Project+2" alt="Project 2" />
-          <h3>Project 2</h3>
-        </li>
-        <li>
-          <img src="https://via.placeholder.com/300x200.png?text=Project+3" alt="Project 3" />
-          <h3>Project 3</h3>
-        </li>
-        <li>
-          <img src="https://via.placeholder.com/300x200.png?text=Project+4" alt="Project 4" />
-          <h3>Project 4</h3>
-        </li>
-      </ul>
-    </section>
-
-    <section class="contact">
-      <h2>Contact me</h2>
-      <form>
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required />
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required />
-        <label for="message">Message</label>
-        <textarea id="message" name="message" required></textarea>
-        <input type="submit" value="Send" />
+    <main>
+      <article>
+        <h2>Welcome to My Website!</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus auctor elit nisl, in malesuada libero vehicula ac. Aliquam vel elementum odio. Fusce aliquet euismod lacus, quis bibendum nisl iaculis at. Etiam id lorem id arcu malesuada rutrum. Fusce a nulla sed ipsum egestas euismod. Nulla vel ultricies lectus, eget vehicula magna. Sed vel felis et elit placerat viverra.</p>
+        <img src="images/image1.jpg" alt="Image 1">
+      </article>
+      <article>
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus auctor elit nisl, in malesuada libero vehicula ac. Aliquam vel elementum odio. Fusce aliquet euismod lacus, quis bibendum nisl iaculis at. Etiam id lorem id arcu malesuada rutrum. Fusce a nulla sed ipsum egestas euismod. Nulla vel ultricies lectus, eget vehicula magna. Sed vel felis et elit placerat viverra.</p>
+        <img src="images/image2.jpg" alt="Image 2">
+      </article>
+      <article>
+        <h2>Our Services</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus auctor elit nisl, in malesuada libero vehicula ac. Aliquam vel elementum odio. Fusce aliquet euismod lacus, quis bibendum nisl iaculis at. Etiam id lorem id arcu malesuada rutrum. Fusce a nulla sed ipsum egestas euismod. Nulla vel ultricies lectus, eget vehicula magna. Sed vel felis et elit placerat viverra.</p>
+        <img src="images/image3.jpg" alt="Image 3">
+      </article>
+    </main>
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form name="myForm" onsubmit="return validateForm()" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <br>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea>
+        <br>
+        <input type="submit" value="Submit">
       </form>
     </section>
-
     <footer>
-      <p>&copy; 2023 - Simple Portfolio</p>
-    </footer>
-  </body>
-</html>
+      <p>&copy; 2023 My Website. All rights reserved.</p>
+    </footer
