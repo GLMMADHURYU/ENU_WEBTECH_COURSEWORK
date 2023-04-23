@@ -51,3 +51,9 @@ function clearCart() {
     cartTotal.textContent = '0.00';
     cartItems.innerHTML = '';
 }
+var bannerTitle = document.getElementById("banner-title");
+
+bannerTitle.addEventListener("click", function() {
+    bannerTitle.classList.toggle("bold");
+});
+
