@@ -19,6 +19,9 @@ header {
     text-align: center;
     border-bottom: 1px solid #ccc;
 }
+.bold {
+    font-weight: bold;
+}
 header h1 {
     margin-bottom: 10px;
     color: #fff;
