@@ -9,17 +9,19 @@ body {
     font-size: 16px;
     line-height: 1.5;
     color: #333;
+    background-color: #FFD700;
 }
 
 /* Header Styles */
 header {
-    background-color: #f8f8f8;
+    background-color: #8b0000;
     padding: 20px;
     text-align: center;
     border-bottom: 1px solid #ccc;
 }
 header h1 {
     margin-bottom: 10px;
+    color: #fff;
 }
 nav ul {
     list-style: none;
@@ -30,7 +32,7 @@ nav li {
     margin: 0 10px;
 }
 nav a {
-    color: #333;
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
 }
