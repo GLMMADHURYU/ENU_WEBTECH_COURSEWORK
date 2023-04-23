@@ -144,10 +144,628 @@ nav a:hover {
   background-size: cover;
   background-position: center;
 }
+
 /* Footer styles */
 footer {
   background-color: #f9f9f9;
   border-top: 1px solid #ddd;
   padding: 10px 0;
   text-align: center;
+}
+/* Footer styles */
+footer {
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+  padding: 10px 0;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+
+  nav li {
+    display: block;
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  #banner {
+    height: 300px;
+  }
+
+  #banner h1 {
+    font-size: 2.5rem;
+  }
+
+  #banner p {
+    font-size: 1.5rem;
+  }
+
+  .feature,
+  .post {
+    max-width: 100%;
+  }
+
+}
+
+@media (max-width: 576px) {
+
+  #banner {
+    height: 200px;
+  }
+
+  #banner h1 {
+    font-size: 2rem;
+  }
+
+  #banner p {
+    font-size: 1rem;
+  }
+
+}
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  color: #337ab7;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+
+  nav ul {
+    text-align: center;
+  }
+
+  nav li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  #banner {
+    height: 300px;
+    padding: 20px;
+  }
+
+  #banner h1 {
+    font-size: 3rem;
+  }
+
+  #banner p {
+    font-size: 1.5rem;
+  }
+
+  .feature, .post {
+    max-width: 100%;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .feature, .post {
+    margin: 10px;
+  }
+
+}
+
+/* Accessibility styles */
+.sr-only {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+/* Newsletter form styles */
+#newsletter-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+#newsletter-form input[type="email"] {
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+#newsletter-form button {
+  padding: 10px 20px;
+  background-color: #337ab7;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#newsletter-form button:hover {
+  background-color: #23527c;
+}
+
+/* Media queries */
+@media only screen and (max-width: 768px) {
+  nav ul {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  nav li {
+    display: block;
+    margin: 0;
+  }
+
+  #banner {
+    height: 400px;
+    padding: 30px;
+  }
+
+  #banner h1 {
+    font-size: 3rem;
+  }
+
+  #banner p {
+    font-size: 1.5rem;
+  }
+
+  #features {
+    margin-top: 30px;
+  }
+
+  .feature {
+    margin: 20px 10px;
+  }
+
+  #latest-posts {
+    margin-top: 30px;
+  }
+
+  .post {
+    margin: 20px 10px;
+  }
+}
+}
+/* Newsletter form styles */
+#newsletter {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+  text-align: center;
+}
+
+#newsletter h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#newsletter p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+#newsletter form {
+  display: inline-block;
+}
+
+#newsletter label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+#newsletter input[type="email"] {
+  font-size: 1.2rem;
+  padding: 5px 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+#newsletter button {
+  font-size: 1.2rem;
+  padding: 5px 10px;
+  background-color: #337ab7;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+#newsletter button:hover {
+  background-color: #23527c;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  nav {
+    margin-top: 20px;
+  }
+
+  nav ul {
+    text-align: center;
+  }
+
+  nav li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  #banner {
+    height: auto;
+  }
+
+  #banner h1 {
+    font-size: 3rem;
+  }
+
+  #banner p {
+    font-size: 1.5rem;
+  }
+
+  .feature {
+    margin: 20px 0;
+  }
+
+  #latest-posts .post {
+    margin: 20px 0;
+  }
+
+  #recipes {
+    background-image: none;
+  }
+}
+  margin-top: 50px;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  nav {
+    margin-top: 20px;
+  }
+
+  nav ul {
+    text-align: center;
+  }
+
+  nav li {
+    display: block;
+    margin: 0;
+  }
+
+  #banner {
+    height: 300px;
+  }
+
+  #banner h1 {
+    font-size: 2.5rem;
+  }
+
+  #banner p {
+    font-size: 1.5rem;
+  }
+
+  .feature {
+    margin: 10px;
+  }
+
+  .post {
+    margin: 10px;
+  }
+}
+  text-align: center;
+}
+
+/* Form styles */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form label {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form textarea {
+  height: 150px;
+}
+
+form button[type="submit"] {
+  background-color: #337ab7;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+  background-color: #286090;
+}
+
+/* Media query for smaller devices */
+@media screen and (max-width: 768px) {
+  nav li {
+    display: block;
+    margin: 0;
+  }
+
+  nav li:last-child {
+    margin-bottom: 20px;
+  }
+
+  #banner {
+    height: 300px;
+  }
+
+  #banner h1 {
+    font-size: 2.5rem;
+  }
+
+  #banner p {
+    font-size: 1.5rem;
+  }
+
+  .feature,
+  .post {
+    margin: 20px 0;
+    max-width: 100%;
+  }
+
+  .feature h3,
+  .post h3 {
+    font-size: 2rem;
+  }
+
+  .feature p,
+  .post p {
+    font-size: 1.5rem;
+  }
+}
+}
+
+/* Media queries */
+@media only screen and (max-width: 768px) {
+  /* Header styles */
+  nav ul {
+    text-align: center;
+  }
+
+  nav li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  /* Banner styles */
+  #banner {
+    height: 400px;
+  }
+
+  #banner h1 {
+    font-size: 3rem;
+  }
+
+  #banner p {
+    font-size: 1.5rem;
+  }
+
+  /* Feature styles */
+  #features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature {
+    max-width: 100%;
+  }
+
+  /* Post styles */
+  #latest-posts {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .post {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  /* Banner styles */
+  #banner h1 {
+    font-size: 2rem;
+  }
+
+  #banner p {
+    font-size: 1.2rem;
+  }
+}
+}
+
+@media (max-width: 768px) {
+  /* Header styles */
+  header {
+    padding: 10px;
+  }
+
+  nav ul {
+    text-align: center;
+  }
+
+  nav li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  nav li:first-child {
+    margin-top: 0;
+  }
+
+  nav li:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Banner styles */
+  #banner {
+    height: 300px;
+    padding: 20px;
+  }
+
+  #banner h1 {
+    font-size: 2rem;
+  }
+
+  #banner p {
+    font-size: 1.5rem;
+  }
+
+  /* Feature styles */
+  #features {
+    flex-direction: column;
+  }
+
+  .feature {
+    margin: 20px 0;
+    max-width: none;
+  }
+
+  /* Post styles */
+  #latest-posts {
+    flex-direction: column;
+  }
+
+  .post {
+    margin: 20px 0;
+    max-width: none;
+  }
+
+  /* Recipe styles */
+  #recipes {
+    padding: 20px;
+  }
+
+  #recipes h2 {
+    margin-top: 0;
+  }
+
+  #recipes form {
+    margin-bottom: 20px;
+  }
+
+  #recipes label {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+/* Form styles */
+form {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form label {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+form input[type="text"], form input[type="email"], form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+form input[type="submit"] {
+  background-color: #337ab7;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+  background-color: #286090;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  nav ul {
+    text-align: center;
+  }
+  
+  nav li {
+    display: block;
+    margin: 10px 0;
+  }
+  
+  #banner {
+    height: 300px;
+    padding: 20px;
+  }
+  
+  #banner h1 {
+    font-size: 2.5rem;
+  }
+  
+  #banner p {
+    font-size: 1.5rem;
+  }
+  
+  .feature, .post {
+    margin: 10px;
+  }
+  
+  #recipes {
+    background-position: left;
+  }
+}
+
+@media (max-width: 480px) {
+  form input[type="text"], form input[type="email"], form textarea {
+    font-size: 0.8rem;
+  }
+  
+  form input[type="submit"] {
+    font-size: 0.8rem;
+  }
 }
