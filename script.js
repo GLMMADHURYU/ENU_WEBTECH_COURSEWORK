@@ -57,3 +57,28 @@ bannerTitle.addEventListener("click", function() {
     bannerTitle.classList.toggle("bold");
 });
 
+function validateForm() {
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var message = document.getElementById("message").value;
+  var error = document.querySelectorAll(".error");
+
+  if (name == "") {
+    error[0].innerHTML = "Please enter your name";
+    return false;
+  } else if (email == "") {
+    error[1].innerHTML = "Please enter your email address";
+    return false;
+  } else if (message == "") {
+    error[2].innerHTML = "Please enter a message";
+    return false;
+  } else {
+    document.getElementById("success").innerHTML = "Your message has been sent successfully!";
+    document.getElementById("success").style.display = "block";
+    document.getElementById("success").style.color = "green";
+    document.getElementById("success").style.fontSize = "16px";
+    document.getElementById("success").style.textAlign = "center";
+    setTimeout(function(){document.getElementById("success").style.display = "none";}, 5000);
+    return true;
+  }
+}
