@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasty Travels - Home</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "YOUR_API_KEY",
+        authDomain: "YOUR_AUTH_DOMAIN",
+        projectId: "YOUR_PROJECT_ID",
+        storageBucket: "YOUR_STORAGE_BUCKET",
+        messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+        appId: "YOUR_APP_ID"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Destinations</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="banner">
+        <h1>Welcome to Tasty Travels</h1>
+        <p>Explore the world one dish at a time</p>
+      </section>
+      <section id="features">
+        <h2>Our Features</h2>
+        <div class="feature">
+          <img src="assets/img/feature1.jpg" alt="Feature 1">
+          <h3>Discover Local Cuisines</h3>
+          <p>Experience the unique flavors of different cultures and regions</p>
+        </div>
+        <div class="feature">
+          <img src="assets/img/feature2.jpg" alt="Feature 2">
+          <h3>Plan Your Next Adventure</h3>
+          <p>Find inspiration for your next trip and create your own travel itinerary</p>
+        </div>
+        <div class="feature">
+          <img src="assets/img/feature3.jpg" alt="Feature 3">
+          <h3>Connect with Other Foodies</h3>
+          <p>Join a community of like-minded travelers and share your culinary experiences</p>
+        </div>
+      </section>
+      <section id="latest-posts">
+        <h2>Latest Posts</h2>
+        <div class="post">
+          <img src="assets/img/post1.jpg" alt="Post 1">
+          <h3>Discovering the Flavors of Mexico</h3>
+          <p>Join us on a journey through the colorful streets and markets of Mexico City</p>
+          <a href="#">Read More</a>
+        </div>
+        <div class="post">
+          <img src="assets/img/post2.jpg" alt="Post 2">
+          <h3>Exploring the Culinary Scene
+
+          <h3>Exploring the Culinary Scene of Tokyo</h3>
+          <p>Get a taste of the unique fusion of traditional and modern flavors in Tokyo</p>
+<a href="#">Read More</a>
+</div>
+</section>
+<section id="home">
+<h2>Most Popular Recipes</h2>
+<!-- display most popular recipes here -->
+<h2>Cooking Tips and Techniques</h2>
+<!-- display cooking tips and techniques here -->
+<h2>Community Content</h2>
+<!-- display community content here -->
+</section>
+
+      <!-- Recipes Section -->
+  <section id="recipes">
+    <h2>Recipes</h2>
+    <form>
+      <label for="search-recipes">Search for Recipes:</label>
+      <input type="text" id="search-recipes" name="search-recipes">
+      <button type="submit">Search</button>
+    </form> 
+    <!-- display search results here -->
+
+    <!-- Firebase code starts here -->
+    <!-- The first code is a script that initializes Firebase and connects your web app to Firebase services. -->
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-firestore.js"></script>
+    <script>
+      // Initialize Firebase
+      var firebaseConfig = {
+        apiKey: "YOUR_API_KEY",
+        authDomain: "YOUR_AUTH_DOMAIN",
+        projectId: "YOUR_PROJECT_ID",
+        storageBucket: "YOUR_STORAGE_BUCKET",
+        messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+        appId: "YOUR_APP_ID"
+      };
+      firebase.initializeApp(firebaseConfig);
+      var db = firebase.firestore();
+    </script>
+
+    <!-- The second code is an HTML form that allows users to enter recipe details. -->
+    <form id="add-recipe-form">
+      <label for="recipe-name">Recipe Name:</label>
+      <input type="text" id="recipe-name" name="recipe-name">
+      <label for="recipe-description">Recipe Description:</label>
+      <textarea id="recipe-description" name="recipe-description"></textarea>
+      <label for="recipe-ingredients">Recipe Ingredients:</label>
+      <textarea id="recipe-ingredients" name="recipe-ingredients"></textarea>
+      <label for="recipe-instructions">Recipe Instructions:</label>
+      <textarea id="recipe-instructions" name="recipe-instructions"></textarea>
+      <button type="submit">Add Recipe</button>
+    </form>
+
+    <script>
+      // Add recipe to Firestore
+      var addRecipeForm = document.getElementById("add-recipe-form");
+      addRecipeForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+        var recipeName = addRecipeForm["recipe-name"].value;
+        var recipeDescription = addRecipeForm["recipe-description"].value;
+        var recipeIngredients = addRecipeForm["recipe-ingredients"].value;
+        var recipeInstructions = addRecipeForm["recipe-instructions"].value;
+        db.collection("recipes").add({
+          name: recipeName,
+          description: recipeDescription,
+          ingredients: recipeIngredients,
+          instructions: recipeInstructions
+        })
+        .then(function(docRef) {
+          console.log("Recipe added with ID: ", docRef.id);
+          addRecipeForm.reset();
+        })
+        .catch(function(error) {
+          console.error("Error adding recipe: ", error);
+        });
+      });
+    </script>
+    <!-- Firebase code ends here -->
+  </section>
+
+  <!-- Cooking Tips and Techniques Section -->
+  <section id="cooking-tips">
+    <h2>Cooking Tips and Techniques</h2>
+    <!-- display cooking tips and techniques here -->
+  </section>
+
+  <!-- Nutrition Section -->
+  <section id="nutrition">
+    <h2>Nutrition Information</h2>
+    <!-- display information on nutritional benefits of different foods here -->
+  </section>
+
+  <!-- Community Section -->
+  <section id="community">
+    <h2>Community Forums</h2>
+    <!-- display community forums here -->
+  </section>
+
+  <!-- Local Sourcing Section -->
+  <section id="local-sourcing">
+    <h2>Local Sourcing</h2>
+    <!-- display resources for locally sourced ingredients here -->
+  </section>
+</main>
+<footer>
+  <p>&copy; Tasty Travels 2023</p>
+</footer>
+</body>
+</html>
