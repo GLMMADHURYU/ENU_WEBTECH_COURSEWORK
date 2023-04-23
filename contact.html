@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/RecipeLogo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Flavor Fest</title>
+  </head>
+  <body>
+    <div class="contact-header">
+      <div class="header">
+        <nav class="nav-bar">
+          <img src="./img/Logo.png" class="brand-name">
+       <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </a>
+          <div class="menu-bar">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="contact-wrapper">
+          <div class="contact-title">
+            <h1>Contact Us</h1>
+          </div>
+          <div class="subtitle">
+            <p>Please Contact Us</p>
+          </div>
+          <div class="box">
+            <!--Form-->
+            <div class="contact form">
+              <h3>Send a Request</h3>
+              <form class="gform pure-form pure-form-stacked" method="POST" data-email=""
+                action="" onsubmit="event.preventDefault(); validateForm()">
+                <div class="formBox">
+                  <div class="row50">
+                    <div class="inputBox">
+                      <label for="name">Name:</label>
+                      <input type="text" name="name" id="name" placeholder="Your Name">
+                      <small class="error"></small>
+                    </div>
+                    <div class="inputBox">
+                      <label for="email">Email:</label>
+                      <input type="text" name="email" id="email" placeholder="Your Email">
+                      <small class="error"></small>
+                    </div>
+                  </div>
+                  <div class="row100">
+                    <div class="inputBox">
+                      <label for="message">Message:</label>
+                      <textarea id="message" name="message" placeholder="Your Message"></textarea>
+                      <small class="error"></small>
+                    </div>
+                  </div>
+                  <div class="row100">
+                    <div class="inputBox">
+                      <input type="submit" id="give a shout" value="Give A Shout" >
+                      <p id="success"></p>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <!--Info-->
+            <div class="contact info">
+              <h3>Contact Information</h3>
+                <div>
+                  <span><ion-icon name="location-outline"></ion-icon></span>
+                  <p>Any City <br>Uk</p>
+                </div>
+                <div>
+                  <span><ion-icon name="mail-outline"></ion-icon></span>
+                  <p>example@gmail.com</p>
+                </div>
+                <div>
+                  <span><ion-icon name="call-outline"></ion-icon></span>
+                  <p>+44 1234567890</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section about">
+          <h1 class="logo-text">Flavor Fest</h1>
+          <p>
+            Flavor Fest is a platform where you can find different types of recipes.
+            We provide you with the best and easy recipes.
+          </p>
+          <div class="contact">
+            <span><ion-icon name="location-outline"></ion-icon></span>
+            <p>Any City, UK</p>
+          </div>
+          <div class="contact">
+            <span><ion-icon name="mail-outline"></ion-icon></span>
+            <p>flavorfest@gmail.com</p>
+          </div>
+          <div class="contact">
+            <span><ion-icon name="call-outline"></ion-icon></span>
+            <p>+44 1234567890</p>
+          </div>
+          <div class="socials">
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+          </div>
+        </div>
+        <div class="footer-section links">
+          <h2>Quick Links</h2>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms &amp; Conditions</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-section contact-form">
+          <h2>Contact Us</h2>
+          <form action="index.html" method="post">
+            <input type="email" name="email" class="text-input contact-input" placeholder="Your email address...">
+            <textarea rows="4" name="message" class="text-input contact-input" placeholder="Your message..."></textarea>
+            <button type="submit" class="btn btn-big contact-btn">
+              <ion-icon name="paper-plane-outline"></ion-icon>
+              Send
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        Flavor Fest
+      </div>
+    </footer>
+  </body>
+</html>
