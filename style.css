@@ -6,7 +6,7 @@ body {
 .header {
   background-color: #fff;
   color: #fff;
-  padding: 10px;
+  padding: 5px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 }
 
@@ -19,10 +19,9 @@ body {
 }
 
 .logo {
-  font-size: 48px; /* Increased font size */
+  font-size: 55px;
   font-weight: bold;
   text-align: left;
-  flex: 1;
   text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
   font-family: "Helvetica Neue", sans-serif; /* Updated font */
   letter-spacing: 1px; /* Added letter spacing */
@@ -80,7 +79,7 @@ ul {
 li {
     margin-bottom: 40px;
     text-align: center;
-    background-color: #fff;
+    background-color: #222;
     box-shadow: 0 2px 5px rgba(0,0,0,0.3);
     padding: 20px;
     border-radius: 5px;
@@ -88,7 +87,7 @@ li {
 h3 {
     font-size: 20px;
     margin-bottom: 10px;
-    color: #800020;
+    color: #999;
 }
 img {
     max-width: 100%;
