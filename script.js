@@ -31,6 +31,22 @@ function addToCart(item) {
     showCart();
 }
 
+//Adding Images to Carousel
+const images = [
+  'british-delights',
+  'asian-delights',
+  'simply-vegan'
+];
+
+const slides = document.querySelectorAll('.carousel .slide');
+
+slides.forEach((slide, index) => {
+  const img = document.createElement('img');
+  img.src = images[index];
+  slide.appendChild(img);
+});
+
+
 // Show cart function
 function showCart() {
     let cartHTML = '';
