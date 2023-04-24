@@ -31,26 +31,26 @@ body {
 .logo {
   font-size: 36px;
   font-weight: bold;
-  text-align: left; /* Change to left */
+  text-align: left;
   flex: 1;
   text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
 }
 
 .navigation {
   flex: 1;
-  text-align: right; /* Add text-align */
+  text-align: right;
 }
 
 ul {
   display: flex;
-  justify-content: flex-end; /* Change to flex-end */
+  justify-content: flex-end;
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
 li {
-  margin-left: 20px; /* Change to left */
+  margin-left: 20px;
 }
 
 a {
@@ -68,7 +68,7 @@ a:hover {
 /* Main Content Styles */
 main {
     max-width: 1200px;
-    margin: 20px auto;
+    margin: 0 auto; /* Change margin to 0 auto */
     padding: 0 20px;
 }
 section {
@@ -87,7 +87,11 @@ ul {
 li {
     margin-bottom: 40px;
     text-align: center;
+    flex: 1; /* Add flex */
+    margin-right: 20px; /* Add margin-right */
+    margin-left: 20px; /* Add margin-left */
 }
+
 h3 {
     font-size: 20px;
     margin-bottom: 10px;
