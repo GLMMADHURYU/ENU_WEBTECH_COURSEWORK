@@ -2,133 +2,189 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>British Delights - Flavor Fest</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>British Delights - Flavor Fest</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+        }
+        
+        .header {
+            background-color: #212529;
+            color: #fff;
+            padding: 15px;
+            position: relative;
+        }
+        
+        .header .banner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .header .logo {
+            font-size: 30px;
+            font-weight: bold;
+        }
+        
+        .header .navigation ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .header .navigation ul li {
+            margin-left: 20px;
+        }
+        
+        .header .navigation ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            transition: all 0.3s ease-in-out;
+            padding: 5px 10px;
+        }
+        
+        .header .navigation ul li a:hover {
+            background-color: #fff;
+            color: #212529;
+            border-radius: 5px;
+        }
+        
+        .summer-menu {
+            margin-top: 50px;
+            padding: 30px;
+        }
+        
+        .summer-menu h2 {
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .summer-menu ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        
+        .summer-menu li {
+            width: 350px;
+            background-color: #fff;
+            margin: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .summer-menu li img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .summer-menu li h3 {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 20px;
+            margin-bottom: 0;
+        }
+        
+        .summer-menu li p {
+            font-size: 16px;
+            margin: 20px;
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+        
+        .summer-menu li .price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #123456;
+}
+	        .summer-menu li .description {
+        font-size: 16px;
+        color: #999;
+    }
+
+    .summer-menu li .button {
+        display: inline-block;
+        background-color: #efefef;
+        padding: 8px 16px;
+        border-radius: 4px;
+        color: #333;
+        text-decoration: none;
+        transition: background-color 0.2s ease;
+    }
+
+    .summer-menu li .button:hover {
+        background-color: #333;
+        color: #fff;
+    }
+
+    /* MEDIA QUERIES */
+
+    @media (max-width: 768px) {
+        .container {
+            max-width: 100%;
+            margin: 0;
+        }
+        .menu-title {
+            font-size: 32px;
+        }
+        .summer-menu li {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        .summer-menu li .image {
+            width: 100%;
+            height: auto;
+        }
+        .summer-menu li .button {
+            display: block;
+            margin: 20px auto 0;
+        }
+    }
+
+</style>
 </head>
 <body>
-    <header class="header">
-        <div class="banner">
-            <div class="logo">Flavor Fest</div>
-            <nav class="navigation">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="menu.html">Menu</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="contact.html">Contact<</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-</body>
-</html>
-
-    <main>
-        <section class="summer-menu">
-            <h2>Summer Menu</h2>
-            <ul>
-                <li>
-                    <img src="images/dish1.jpg" alt="Summer Menu">
-                    <h3>Passion Fruit Drink</h3>
-                    <p>A delicious Passion Fruit Drink for the hot summers.</p>
-                    <span class="price">£4.00</span>
-                    <button>Add to Cart</button>
-                </li>
-                <li>
-                    <img src="images/dish2.jpg" alt="Summer Menu">
-                    <h3>Cheesy Burger</h3>
-                    <p>A juicy and cheesy burger topped with vegies, lettuce, and tomato.</p>
-                    <span class="price">£6.00</span>
-                    <button>Add to Cart</button>
-                </li>
-                <li>
-                    <img src="images/dish3.jpg" alt="Summer Menu">
-                    <h3>Veggie Pizza</h3>
-                    <p>A delicious vegetarian pizza with fresh vegetables and herbs.</p>
-                    <span class="price">£12.00</span>
-                    <button>Add to Cart</button>
-                </li>
-              <li>
-                    <img src="images/dish3.jpg" alt="Summer Menu">
-                    <h3>Mushroom Pizza</h3>
-                    <p>A delicious vegetarian pizza with mushrooms and herbs.</p>
-                    <span class="price">£14.00</span>
-                  <button>Add to Cart</button>
-               
-                </li>
-
-<div class="item">
-  <img src="images/dish4.jpg" alt="Mushroom Risotto">
-  <h3>Mushroom Risotto</h3>
-  <p>A classic Italian rice dish with fresh mushrooms and herbs.</p>
-  <span class="price">£14.00</span>
-  <button>Add to Cart</button>
-</div>
-
-<div class="item">
-  <img src="images/dish5.jpg" alt="Tuna Salad">
-  <h3>Tuna Salad</h3>
-  <p>A light and refreshing salad with fresh tuna and a tangy dressing.</p>
-  <span class="price">£10.00</span>
-  <button>Add to Cart</button>
-</div>
-
-<div class="item">
-  <img src="images/dish6.jpg" alt="Beef Burger">
-  <h3>Beef Burger</h3>
-  <p>A juicy beef burger with all the classic toppings.</p>
-  <span class="price">£8.00</span>
-  <button>Add to Cart</button>
-</div>
-
-<div class="item">
-  <img src="images/dish7.jpg" alt="Fish and Chips">
-  <h3>Fish and Chips</h3>
-  <p>A classic British dish with fresh fish and crispy chips.</p>
-  <span class="price">£12.00</span>
-  <button>Add to Cart</button>
-</div>
-
-<div class="item">
-  <img src="images/dish8.jpg" alt="Chicken Curry">
-  <h3>Chicken Curry</h3>
-  <p>A spicy and aromatic curry with tender chicken and fragrant spices.</p>
-  <span class="price">£15.00</span>
-  <button>Add to Cart</button>
-</div>
-
-<div class="item">
-  <img src="images/dish9.jpg" alt="Steak and Fries">
-  <h3>Steak and Fries</h3>
-  <p>A succulent steak with crispy fries and a tangy sauce.</p>
-  <span class="price">£18.00</span>
-  <button>Add to Cart</button>
-</div>
-
-<div class="item">
-  <img src="images/dish10.jpg" alt="Pesto Pasta">
-  <h3>Pesto Pasta</h3>
-  <p>A classic Italian pasta dish with a creamy pesto sauce and fresh herbs.</p>
-  <span class="price">£10.00</span>
-  <button>Add to Cart</button>
-</div>
-
-<div class="item">
-  <img src="images/dish11.jpg" alt="Grilled Salmon">
-  <h3>Grilled Salmon</h3>
-  <p>A succulent grilled salmon fillet with fresh vegetables and a tangy dressing.</p>
-  <span class="price">£16.00</span>
-  <button>Add to Cart</button>
-</div>
-
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>Exciting Menu AND Extremely Delicious</p>
-    </footer>
+    <div class="container">
+        <h1 class="menu-title">Summer Menu</h1>
+        <ul class="summer-menu">
+            <li>
+                <img class="image" src="https://via.placeholder.com/500x300.png?text=Grilled+Salmon" alt="Grilled Salmon">
+                <h2 class="title">Grilled Salmon</h2>
+                <span class="price">$15.99</span>
+                <p class="description">A perfectly grilled salmon fillet, seasoned with herbs and spices.</p>
+                <a class="button" href="#">Order Now</a>
+            </li>
+            <li>
+                <img class="image" src="https://via.placeholder.com/500x300.png?text=Caprese+Salad" alt="Caprese Salad">
+                <h2 class="title">Caprese Salad</h2>
+                <span class="price">$9.99</span>
+                <p class="description">A classic Italian salad made with fresh mozzarella, tomatoes, and basil.</p>
+                <a class="button" href="#">Order Now</a>
+            </li>
+            <li>
+                <img class="image" src="https://via.placeholder.com/500x300.png?text=Grilled+Chicken+Kebabs" alt="Grilled Chicken Kebabs">
+                <h2 class="title">Grilled Chicken Kebabs</h2>
+                <span class="price">$12.99</span>
+                <p class="description">Tender grilled chicken skewers, marinated in a savory blend of spices.</p>
+                <a class="button" href="#">Order Now</a>
+            </li>
+        </ul>
+    </div>
 </body>
 </html>
