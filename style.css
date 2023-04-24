@@ -105,106 +105,61 @@ footer p {
     color: #D4AF37;
 }
 
-
-/* Contact Form Styles */
-
-form {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 50px;
-}
-
-.formBox {
-  width: 100%;
-  max-width: 500px;
-  background: #fff;
-  padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-.row50 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
-
-.row100 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
-
-.inputBox {
-  width: calc(50% - 10px);
-}
-
-.inputBox:last-child {
-  width: 100%;
-}
-
-.inputBox label {
-  display: block;
-  margin-bottom: 5px;
-  color: #333;
-  font-size: 16px;
-}
-
-.inputBox input,
-.inputBox textarea {
-  width: 100%;
+header {
+  background-color: #008000;
+  color: #fff;
   padding: 10px;
-  border-radius: 5px;
-  border: none;
-  background: #eee;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 28px;
   margin-bottom: 10px;
 }
 
-.inputBox input:focus,
-.inputBox textarea:focus {
-  background: #fff;
-  outline: none;
+label {
+  display: inline-block;
+  width: 100px;
+  font-weight: bold;
 }
 
-.small {
-  font-size: 12px;
-  color: red;
-  display: block;
-  margin-top: 5px;
-}
-
-.buttonBox {
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
   width: 100%;
-  text-align: center;
-}
-
-.buttonBox input[type="submit"] {
-  width: 200px;
-  background: #008000;
-  color: #fff;
-  border: none;
-  padding: 10px 0;
-  font-size: 16px;
+  padding: 10px;
+  margin-bottom: 20px;
   border-radius: 5px;
+  border: none;
+  background-color: #f8f8f8;
+}
+
+button[type="submit"] {
+  background-color: #008000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
   cursor: pointer;
-  transition: 0.3s ease-in-out;
+  font-size: 16px;
+  font-weight: bold;
 }
 
-.buttonBox input[type="submit"]:hover {
-  background: #006400;
-}
-
-.success {
-  color: green;
-  margin-top: 10px;
-  text-align: center;
-}
-
-.error {
-  color: red;
-  margin-top: 5px;
-  text-align: center;
+button[type="submit"]:hover {
+  background-color: #006400;
 }
