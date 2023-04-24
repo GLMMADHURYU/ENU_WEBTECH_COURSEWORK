@@ -5,20 +5,19 @@
     padding: 0;
 }
 body {
-    font-family: Arial, sans-serif;
-    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
     line-height: 1.5;
-    color: #D4AF37;
-    background-color: #1E6D52;
+    color: #800020;
+    background-color: #F5F5DC;
 }
 
 /* Header Styles */
 .header {
-  background-color: #008000;
+  background-color: #800020;
   color: #fff;
   padding: 10px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-  background-image: linear-gradient(to bottom, #008000, #006400);
 }
 
 .banner {
@@ -31,26 +30,26 @@ body {
 .logo {
   font-size: 36px;
   font-weight: bold;
-  text-align: left;
+  text-align: left; /* Change to left */
   flex: 1;
   text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
 }
 
 .navigation {
   flex: 1;
-  text-align: right;
+  text-align: right; /* Add text-align */
 }
 
 ul {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-end; /* Change to flex-end */
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
 li {
-  margin-left: 20px;
+  margin-left: 20px; /* Change to left */
 }
 
 a {
@@ -68,7 +67,7 @@ a:hover {
 /* Main Content Styles */
 main {
     max-width: 100%;
-    margin: 0 auto; /* Change margin to 0 auto */
+    margin: 20px auto;
     padding: 0 20px;
 }
 section {
@@ -77,6 +76,7 @@ section {
 section h2 {
     font-size: 24px;
     margin-bottom: 20px;
+    color: #800020;
 }
 ul {
     list-style: none;
@@ -87,14 +87,15 @@ ul {
 li {
     margin-bottom: 40px;
     text-align: center;
-    flex: 1; /* Add flex */
-    margin-right: 20px; /* Add margin-right */
-    margin-left: 20px; /* Add margin-left */
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    padding: 20px;
+    border-radius: 5px;
 }
-
 h3 {
     font-size: 20px;
     margin-bottom: 10px;
+    color: #800020;
 }
 img {
     max-width: 100%;
@@ -105,7 +106,7 @@ p {
     margin-bottom: 10px;
 }
 button {
-    background-color: #D4AF37;
+    background-color: #800020;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -115,8 +116,9 @@ button {
 }
 button:hover {
     background-color: #fff;
-    color: #f00;
-}
+    color: #800020;
+    border: 2px solid #800020;
+} 
 
 /* Footer Styles */
 footer {
