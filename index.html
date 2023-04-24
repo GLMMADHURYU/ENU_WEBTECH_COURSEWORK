@@ -2,70 +2,82 @@
 <html>
 <head>
 	<title>Flavor Fest</title>
-	<link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<style>
-		/* Addded our CSS styling here */
-	</style>
+	<!-- Link to Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
 <body>
 	<header>
-		<div class="banner">
-    		<div class="logo">Flavor Fest</div>
-    		<nav class="navigation">
-			<ul>
-				<li><a href="index.html">Home</a></li>
-        			<li><a href="menu.html">Menu</a></li>
-       				<li><a href="#">About</a></li>
-        			<li><a href="contact.html">Contact</a></li>
-			</ul>
+		<nav class="navbar navbar-expand-md navbar-light bg-light">
+			<div class="container">
+				<a class="navbar-brand" href="#">Flavor Fest</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="#">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Menu</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Contact</a>
+						</li>
+					</ul>
+					<!-- Search bar -->
+					<form class="form-inline my-2 my-lg-0">
+						<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+						<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+					</form>
+				</div>
+			</div>
 		</nav>
-			<form method="get" action="/search">
-  <label for="search">Search:</label>
-  <input type="text" id="search" name="q">
-  <button type="submit">Search</button>
-</form>
-
-		</div>	
 	</header>
 	<main>
 		<section>
-			<h2>Continental Reciepes</h2>
-			<ul>
-				<li>
-					<h3>British Delights</h3>
-					<img src="british-delights.jpg" alt="British Delights">
-					<p>An exciting and well written reciepe book by our famous British food chef.</p>
-				
-				</li>
-				<li>
-					<h3>Asian Delights</h3>
-					<img src="asian-delights.jpg" alt="Asian Delights">
-					<p>An exciting and well written reciepe book by our famous Asian food chef.</p>
-					
-				</li>
-				<li>
-					<h3>Simply Vegan</h3>
-					<img src="simply-vegan.jpg" alt="Simply Vegan">
-					<p>An exciting and well written reciepe book by our famous Vegan cuisine chef.</p>
-					
-				</li>
-			</ul>
+			<div class="container">
+				<h2>Continental Recipes</h2>
+				<div class="row">
+					<div class="col-md-4">
+						<h3>British Delights</h3>
+						<img src="british-delights.jpg" alt="British Delights" class="img-fluid">
+						<p>An exciting and well-written recipe book by our famous British food chef.</p>
+					</div>
+					<div class="col-md-4">
+						<h3>Asian Delights</h3>
+						<img src="asian-delights.jpg" alt="Asian Delights" class="img-fluid">
+						<p>An exciting and well-written recipe book by our famous Asian food chef.</p>
+					</div>
+					<div class="col-md-4">
+						<h3>Simply Vegan</h3>
+						<img src="simply-vegan.jpg" alt="Simply Vegan" class="img-fluid">
+						<p>An exciting and well-written recipe book by our famous Vegan cuisine chef.</p>
+					</div>
+				</div>
+			</div>
 		</section>
 		<section>
-			<h2>About Flavor Fest</h2>
-			<p>Welcome to our food website, where we offer the most delicious foods and recipes to satisfy your taste buds. We are passionate about sharing our love for food and bringing people together through culinary experiences.
+			<div class="container">
+				<h2>About Flavor Fest</h2>
+				<p>Welcome to our food website, where we offer the most delicious foods and recipes to satisfy your taste buds. We are passionate about sharing our love for food and bringing people together through culinary experiences.
 
 Our team of experienced chefs and food enthusiasts work tirelessly to curate an extensive collection of recipes that are sure to impress your family and friends. From classic comfort foods to exotic dishes from around the world, we have something for every taste and occasion.
 
-In addition to offering delicious foods, we are also proud to be one of the most famous online retailers of world famous recipe books. Our selection of books includes some of the most popular and highly-rated cookbooks from renowned chefs and food writers around the globe. Whether you're a beginner or an experienced cook, our books are sure to inspire you to try new recipes and techniques.
+In addition to offering delicious foods, we are also proud to be one of the most famous online retailers of world-famous recipe books. Our selection of books includes some of the most popular and highly-rated cookbooks from renowned chefs and food writers around the globe. Whether you're a beginner or an experienced cook, our books are sure to inspire you to try new recipes and techniques.
 
-We believe that food is more than just sustenance, it is an art form that can bring people together and create unforgettable memories. That's why we are committed to providing the highest quality ingredients and recipes, and to delivering exceptional customer service to all of our customers.
+At Flavor Fest, we believe that food is more than just sustenance; it is an art form that can bring people together and create unforgettable memories. That's why we are committed to providing the highest quality ingredients and recipes, and to delivering exceptional customer service to all of our customers.
 
-Thank you for choosing us as your go-to source for delicious foods and world famous recipe books. We look forward to serving you and helping you create memorable culinary experiences for years to come.</p>
-		</section>
+We are constantly updating our website with new recipes, cooking tips, and food-related articles, so be sure to check back often to see what's new. If you have any questions or comments, please feel free to reach out to us at any time. Our customer support team is available 24/7 to assist you with anything you need.
+
+Thank you for choosing us as your go-to source for delicious foods and world-famous recipe books. We look forward to serving you and helping you create memorable culinary experiences for years to come.</p>
+
+</section>
 		<section>
 			<h2>Contact Us</h2>
 			<p>123 Main Street<br>
@@ -75,7 +87,7 @@ Thank you for choosing us as your go-to source for delicious foods and world fam
 		</section>
 	</main>
 	<footer>
-		<p>Hope We Served Your Purpose.</p>
+		<p>Thank you for choosing us as your go-to source for delicious foods and world-famous recipe books. We look forward to serving you and helping you create memorable culinary experiences for years to come.</p>
 	</footer>
 </body>
 </html>
