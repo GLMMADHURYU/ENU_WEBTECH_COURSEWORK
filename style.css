@@ -263,3 +263,128 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: #008c9e;
 }
+
+
+
+
+/* British Delights Page */
+.recipe-card {
+  margin-bottom: 30px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.recipe-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.recipe-card h4 {
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+.recipe-card p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.recipe-card a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #428bca;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.recipe-card a:hover {
+  background-color: #3071a9;
+}
+
+
+
+/* Asian Delights Page */
+.recipe-card {
+  margin-bottom: 30px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.recipe-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.recipe-card h4 {
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+.recipe-card p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.recipe-card a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #d9534f;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.recipe-card a:hover {
+  background-color: #c9302c;
+}
+
+
+
+/* Simply Vegan Page */
+.recipe-card {
+  margin-bottom: 30px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.recipe-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.recipe-card h4 {
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+.recipe-card p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.recipe-card a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #5cb85c;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.recipe-card a:hover {
+  background-color: #449d44;
+}
+
