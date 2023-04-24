@@ -33,9 +33,9 @@ function addToCart(item) {
 
 //Adding Images to Carousel
 const images = [
-  'british-delights',
-  'asian-delights',
-  'simply-vegan'
+  'british-delights.jpg',
+  'asian-delights.jpg',
+  'simply-vegan.jpg'
 ];
 
 const slides = document.querySelectorAll('.carousel .slide');
