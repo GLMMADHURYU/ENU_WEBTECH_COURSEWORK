@@ -3,11 +3,86 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flavor Fest</title>
+  <title>Flavor Fest - Menu</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <style>
+    .menu-title {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .food-card {
+      display: flex;
+      margin-bottom: 2rem;
+    }
+
+    .food-card img {
+      width: 40%;
+      object-fit: cover;
+    }
+
+    .food-card-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 1rem;
+    }
+
+    .food-card-title {
+      font-size: 2rem;
+      margin-top: 0;
+    }
+
+    .food-card-price {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .food-card-description {
+      margin-bottom: 1rem;
+    }
+
+    .cart {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      background-color: #f8f9fa;
+      padding: 1rem;
+      border-top: 1px solid #dee2e6;
+    }
+
+    .cart-title {
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+
+    .cart-item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0.5rem;
+    }
+
+    .cart-item-title {
+      margin-bottom: 0;
+      font-weight: bold;
+    }
+
+    .cart-item-price {
+      margin-bottom: 0;
+    }
+
+    .cart-total {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    .cart-button {
+      margin-top: 1rem;
+    }
+  </style>
 </head>
 
 <body>
@@ -24,7 +99,7 @@
 							<a class="nav-link" href="index.html">Home</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="menu.html">Menu</a>
+							<a class="nav-link" href="#">Menu</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#">About</a>
@@ -35,6 +110,7 @@
 						
 					</ul>
 					<!-- Search bar -->
+
 					<form class="form-inline my-2 my-lg-0">
 						<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
 						<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
@@ -48,30 +124,60 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="menu-title">Summer Menu</h1>
-        <ul class="summer-menu">
-            <li>
-                <img class="image" src="https://via.placeholder.com/500x300.png?text=Grilled+Salmon" alt="Grilled Salmon">
-                <h2 class="title">Grilled Salmon</h2>
-                <span class="price">$15.99</span>
-                <p class="description">A perfectly grilled salmon fillet, seasoned with herbs and spices.</p>
-                <a class="button" href="#">Order Now</a>
-            </li>
-            <li>
-                <img class="image" src="https://via.placeholder.com/500x300.png?text=Caprese+Salad" alt="Caprese Salad">
-                <h2 class="title">Caprese Salad</h2>
-                <span class="price">$9.99</span>
-                <p class="description">A classic Italian salad made with fresh mozzarella, tomatoes, and basil.</p>
-                <a class="button" href="#">Order Now</a>
-            </li>
-            <li>
-                <img class="image" src="https://via.placeholder.com/500x300.png?text=Grilled+Chicken+Kebabs" alt="Grilled Chicken Kebabs">
-                <h2 class="title">Grilled Chicken Kebabs</h2>
-                <span class="price">$12.99</span>
-                <p class="description">Tender grilled chicken skewers, marinated in a savory blend of spices.</p>
-                <a class="button" href="#">Order Now</a>
-            </li>
-        </ul>
+  <h1 class="menu-title">Summer Menu</h1>
+  <div class="row">
+    <div class="col-md-8">
+      <div class="card mb-3">
+        <img class="card-img-top" src="https://via.placeholder.com/500x300.png?text=Grilled+Salmon" alt="Grilled Salmon">
+        <div class="card-body">
+          <h2 class="card-title">Grilled Salmon</h2>
+          <p class="card-text">A perfectly grilled salmon fillet, seasoned with herbs and spices.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <span class="price">$15.99</span>
+            <a class="btn btn-primary" href="#">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3">
+        <img class="card-img-top" src="https://via.placeholder.com/500x300.png?text=Caprese+Salad" alt="Caprese Salad">
+        <div class="card-body">
+          <h2 class="card-title">Caprese Salad</h2>
+          <p class="card-text">A classic Italian salad made with fresh mozzarella, tomatoes, and basil.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <span class="price">$9.99</span>
+            <a class="btn btn-primary" href="#">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3">
+        <img class="card-img-top" src="https://via.placeholder.com/500x300.png?text=Grilled+Chicken+Kebabs" alt="Grilled Chicken Kebabs">
+        <div class="card-body">
+          <h2 class="card-title">Grilled Chicken Kebabs</h2>
+          <p class="card-text">Tender grilled chicken skewers, marinated in a savory blend of spices.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <span class="price">$12.99</span>
+            <a class="btn btn-primary" href="#">Add to Cart</a>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
-</html>
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-header">
+          Cart
+          <span class="badge badge-primary badge-pill">0</span>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Item 1 <span class="badge badge-primary">$10.99</span></li>
+          <li class="list-group-item">Item 2 <span class="badge badge-primary">$7.99</span></li>
+          <li class="list-group-item">Item 3 <span class="badge badge-primary">$12.99</span></li>
+        </ul>
+        <div class="card-footer d-flex justify-content-between align-items-center">
+          Total: $0.00
+          <a class="btn btn-primary" href="#">Checkout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
