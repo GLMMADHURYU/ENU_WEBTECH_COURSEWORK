@@ -228,41 +228,54 @@ p {
   margin-bottom: 20px;
 }
 
-/* Form styles */
-
+/* Center the C form */
 form {
-  display: inline-block;
-  margin-top: 10px;
+  margin: auto;
+  max-width: 600px;
 }
 
-input[type="text"] {
-  width: 250px;
-  height: 40px;
-  padding: 10px;
-  font-size: 16px;
-  border: none;
+/* Style the form input fields */
+form input[type=text],
+form input[type=email],
+form input[type=tel],
+form textarea {
   border-radius: 0;
-  border-bottom: 2px solid #555;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
 }
 
-input[type="text"]:focus {
-  outline: none;
-  border-bottom: 2px solid #00acc1;
+/* Style the form input fields when focused */
+form input:focus,
+form textarea:focus {
+  border-bottom: 1px solid #f57c00;
 }
 
-button[type="submit"] {
-  background-color: #00acc1;
+/* Style the form submit button */
+form button[type=submit] {
+  background-color: #f57c00;
   color: #fff;
   border: none;
   border-radius: 0;
-  padding: 10px 20px;
+  padding: 10px 30px;
   font-size: 16px;
-  cursor: pointer;
+  transition: background-color 0.2s ease;
 }
 
-button[type="submit"]:hover {
-  background-color: #008c9e;
+/* Style the form submit button when hovered */
+form button[type=submit]:hover {
+  background-color: #e65100;
 }
+
+/* Style the form error message */
+.form-error {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
 
 
 
