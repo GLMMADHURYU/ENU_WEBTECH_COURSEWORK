@@ -401,3 +401,148 @@ form button[type=submit]:hover {
   background-color: #449d44;
 }
 
+/* Menu Page Design */
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Header Styles */
+header {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem 0;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-item .nav-link {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Menu Styles */
+.menu-title {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.food-card {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.food-card img {
+  width: 40%;
+  object-fit: cover;
+}
+
+.food-card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.food-card-title {
+  font-size: 2rem;
+  margin-top: 0;
+}
+
+.food-card-price {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.food-card-description {
+  margin-bottom: 1rem;
+}
+
+.cart {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-top: 1px solid #dee2e6;
+}
+
+.cart-title {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.cart-item-title {
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.cart-item-price {
+  margin-bottom: 0;
+}
+
+.cart-total {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.cart-button {
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+
+  .navbar-nav .nav-item .nav-link {
+    font-size: 1rem;
+  }
+
+  .food-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .food-card img {
+    width: 100%;
+  }
+
+  .food-card-body {
+    padding: 1rem 0;
+  }
+
+  .food-card-title {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  .food-card-price {
+    font-size: 1.2rem;
+  }
+}
