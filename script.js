@@ -129,7 +129,8 @@ const checkoutButton = document.querySelector('.checkout');
 let cart = [];
 
 // Add event listeners
-addToCart
+addToCartButtons.forEach(button => {
+  button.addEventListener('click', () => {
 // Get all the "Add to Cart" buttons on the page
 const addToCartButtons = document.querySelectorAll('.add-to-cart');
 
