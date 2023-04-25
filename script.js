@@ -113,3 +113,95 @@ $('a[href*="#"]:not([href="#"])').click(function() {
       return false;
     }
   }
+    
+    
+    // ADD TO CART FEATURE IN MENU PAGE
+    
+    
+    // Select elements
+const addToCartButtons = document.querySelectorAll('.add-to-cart');
+const cartItemsList = document.querySelector('.cart-items');
+const cartCount = document.querySelector('.cart-count');
+const cartTotal = document.querySelector('.cart-total');
+const checkoutButton = document.querySelector('.checkout');
+
+// Initialize cart
+let cart = [];
+
+// Add event listeners
+addToCart
+// Get all the "Add to Cart" buttons on the page
+const addToCartButtons = document.querySelectorAll('.add-to-cart');
+
+// Add a click event listener to each button
+addToCartButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    // Get the parent card element of the clicked button
+    const parentCard = button.closest('.card');
+
+    // Get the title, price, and image source of the product
+    const title = parentCard.querySelector('.card-title').textContent;
+    const price = parentCard.querySelector('.price').textContent;
+    const imageSrc = parentCard.querySelector('.card-img-top').src;
+
+    // Create a new cart item element
+    const cartItem = document.createElement('li');
+    cartItem.classList.add('list-group-item');
+    cartItem.innerHTML = `
+      <div class="row">
+        <div class="col-3">
+          <img src="${imageSrc}" class="img-fluid" alt="${title}">
+        </div>
+        <div class="col-6">
+          <h6>${title}</h6>
+          <span class="price">${price}</span>
+        </div>
+        <div class="col-3">
+          <button class="btn btn-sm btn-danger remove-item">Remove</button>
+        </div>
+      </div>
+    `;
+
+    // Get the cart list and add the new item to it
+    const cartList = document.querySelector('.cart-list');
+    cartList.appendChild(cartItem);
+
+    // Update the cart total
+    updateCartTotal();
+  });
+});
+
+// Add a click event listener to the "Remove" buttons on each cart item
+const removeItemButtons = document.querySelectorAll('.remove-item');
+removeItemButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    // Get the parent cart item element of the clicked button
+    const parentCartItem = button.closest('.list-group-item');
+
+    // Remove the parent cart item element from the cart list
+    parentCartItem.remove();
+
+    // Update the cart total
+    updateCartTotal();
+  });
+});
+
+// Update the cart total
+function updateCartTotal() {
+  // Get all the cart item price elements
+  const cartItemPrices = document.querySelectorAll('.cart-list .price');
+
+  // Calculate the total price of all the cart items
+  let totalPrice = 0;
+  cartItemPrices.forEach(price => {
+    totalPrice += parseFloat(price.textContent.replace('£', ''));
+  });
+
+  // Update the total price element
+  const totalElement = document.querySelector('.cart-total');
+  totalElement.textContent = `£${totalPrice.toFixed(2)}`;
+
+  // Update the cart badge with the number of items in the cart
+  const cartBadge = document.querySelector('.cart-badge');
+  cartBadge.textContent = cartItemPrices.length;
+}
