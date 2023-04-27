@@ -8,6 +8,22 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <style>
+    /* Center the form on the page */
+    form {
+      margin: 0 auto;
+      max-width: 600px;
+    }
+    /* Adjust the width of the input fields */
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+      width: 100%;
+      max-width: 500px;
+      margin-bottom: 20px;
+    }
+  </style>
 </head>
 
 <body>
@@ -60,20 +76,21 @@
           <div class="form-group">
             <label for="email">Email:</label>
             <input type="email" class="form-control" id="email" required>
-          </div>
-          <div class="form-group">
-            <label for="phone">Phone:</label>
-            <input type="tel" class="form-control" id="phone">
-          </div>
-          <div class="form-group">
-            <label for="comment">Comment:</label>
-            <textarea class="form-control" id="comment" rows="5" cols="30"></textarea>
-          </div>
-          <button type="submit" class="btn btn-block">Send Message</button>
-</form>
-</div>
-
-  </div>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone:</label>
+          <input type="tel" class="form-control" id="phone">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="comment">Comment:</label>
+          <textarea class="form-control" id="comment" rows="5" cols="30"></textarea>
+        </div>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-block">Send Message</button>
+  </form>
 </section>
 </main>
 </body>
