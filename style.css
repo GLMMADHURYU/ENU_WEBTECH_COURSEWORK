@@ -546,3 +546,23 @@ header {
     font-size: 1.2rem;
   }
 }
+
+
+
+.delivery-vehicle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation-name: move-vehicle;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes move-vehicle {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
