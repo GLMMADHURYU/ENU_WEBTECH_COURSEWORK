@@ -176,30 +176,30 @@ Optional: You can also add chocolate chips, caramel sauce, or any other toppings
         <li data-target="#carouselUserReviews" data-slide-to="2"></li>
       </ol>
       <div class="carousel-inner">
-    <div class="carousel-item active d-flex justify-content-center">
-          <div class="card">
-            <div class="card-body">
-              <video src="review1.mp4" controls></video>
-              <p class="card-text">"This restaurant has the best flavors I've ever tasted. I can't wait to order again!"</p>
-              <p class="card-subtitle mb-2 text-muted">- Mr ABC</p>
-            </div>
-          </div>
-        </div>
-   <div class="carousel-item  active d-flex justify-content-center">
-          <div class="card">
-            <div class="card-body">
-              <video src="review2.mp4" controls></video>
-              <p class="card-text">"We had an amazing flavorful experience here. The service was mindblowing!"</p>
-              <p class="card-subtitle mb-2 text-muted">- Mrs LOV</p>
-            </div>
-          </div>
-        </div>
         <div class="carousel-item active d-flex justify-content-center">
           <div class="card">
             <div class="card-body">
+              <video src="review1.mp4" controls></video>
+              <p class="card-text">"This restaurant has the best food I've ever tasted. I can't wait to come back!"</p>
+              <p class="card-subtitle mb-2 text-muted">- John Doe</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item d-flex justify-content-center">
+          <div class="card">
+            <div class="card-body">
+              <video src="review2.mp4" controls></video>
+              <p class="card-text">"I had an amazing dining experience here. The service was top-notch and the food was delicious!"</p>
+              <p class="card-subtitle mb-2 text-muted">- Jane Smith</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item d-flex justify-content-center">
+          <div class="card">
+            <div class="card-body">
               <video src="review3.mp4" controls></video>
-              <p class="card-text">"I love the food and their custom made yogurt shake."</p>
-              <p class="card-subtitle mb-2 text-muted">- Mr Milo</p>
+              <p class="card-text">"The atmosphere here is unbeatable. I love the cozy, rustic decor and the friendly staff."</p>
+              <p class="card-subtitle mb-2 text-muted">- Mark Johnson</p>
             </div>
           </div>
         </div>
@@ -226,7 +226,7 @@ Optional: You can also add chocolate chips, caramel sauce, or any other toppings
         <button class="btn btn-primary">Reserve a Table</button>
       </div>
       <div class="col-6 text-right">
-        <div class="card text-white bg-success">
+        <div class="card text-white bg-success" id="OpeningHoursCard>
           <div class="card-header">
             <h5 class="card-title mb-0">Opening Hours</h5>
           </div>
@@ -240,7 +240,7 @@ Optional: You can also add chocolate chips, caramel sauce, or any other toppings
   </div>
   <script>
     setInterval(function() {
-      $('.card').toggleClass('bg-success bg-danger');
+      $('#OpeningHoursCard').toggleClass('bg-success bg-danger');
     }, 1000);
   </script>
 </footer>
